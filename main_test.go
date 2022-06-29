@@ -21,7 +21,7 @@ func SetUpRouter() *gin.Engine{
 
 
 func TestHomepageHandler(t *testing.T) {
-	mockResponse := `{"message":"Welcome to the Tech Company listing API with Golang"}`
+	mockResponse := `{"message":"Welcome to the Tech Company listing API with Golang. Updated version 2"}`
 
 	r := SetUpRouter()
 	r.GET("/", HomepageHandler)
